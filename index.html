@@ -12,46 +12,48 @@
        <fieldset>
         <legend>Name Information</legend>
         <label for="firstName">First Name:</label>
-        <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+        <input type="text" class="name-info" tabindex="1" id="firstName" name="firstName" placeholder="First Name" required>
         <label for="lastName">Last Name:</label>
-        <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+        <input type="text" class="name-info" tabindex="2" id="lastName" name="lastName" placeholder="Last Name" required>
        </fieldset> 
 
        <fieldset>
         <legend>Contact Information</legend>
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="your.email@email.com" required>
+        <input type="email" class="contact-info" tabindex="3" id="email" name="email" placeholder="your.email@email.com" required>
         <label for="phone">Phone:</label>
-        <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+        <input type="tel" class= "contact-info" tabindex="4" id="phone" name="phone" placeholder="Your Phone Number" required>
        </fieldset>
         
       <fieldset> 
         <legend>Birthday</legend>
         <label for="birthday">Date of Birth:</label>
-        <input type="date" id="birthday" name="birthday" placeholder="Your birthday" required>
+        <input type="date" class= "birthday-info" tabindex="5" id="birthday" name="birthday" placeholder="Your birthday" required>
         <label for="today">Today's Date</label>
-        <input type="date" name="today" value="2024-11-07" id="today">
+        <input type="date" class= "birthday-info" tabindex="6" name="today" value="2024-11-07" id="today">
       </fieldset>
 
       <fieldset>
         <legend>Select Your Favorite Sport</legend>
 
         <label>
-            <input type="radio" name="sport" value="soccer">Soccer</label><br>
+            <input type="radio" tabindex="7" name="sport" value="soccer">Soccer</label><br>
         
         <label>
-            <input type="radio" name="sport" value="basketball"> Basketball</label><br>
+            <input type="radio" tabindex="8" name="sport" value="basketball"> Basketball</label><br>
         
         <label>
-            <input type="radio" name="sport" value="baseball">Baseball
+            <input type="radio" tabindex="9" name="sport" value="baseball">Baseball
         </label><br>
     </fieldset>
 
 
     <fieldset>
-        <button type="submit">Submit</button>
+        <button type="submit" tabindex="10">Submit</button>
       </fieldset> 
     </form>
+
+    <iframe name="cgi-results" id="cgi-results"/>
 
 </body>
 </html>
